@@ -41,12 +41,6 @@ var millisecond = 0;
 // Declare kinectron
 let kinectron = null;
 
-<<<<<<< HEAD
-=======
-// Using Kinectron or NI_mate?    <--- Change to false if using Kinectron / to true if using NI_mate
-let ni_mate = false;
-
->>>>>>> c8a908b840f9adb8c9025434e3c7fd257f1d16cf
 
 // ------------- Kinectron ONLY variables  -------------
 // Mid-line
@@ -155,12 +149,11 @@ function init(){
 // ------------ DRAW ------------------
 
 function draw() {
-<<<<<<< HEAD
     background(0);
     
     // using Ni Mate (use the "handRight_ni" variables)
     if (ni_mate) {
-        fill(255);
+        //fill(255);
         // call your awesome function that draws visuals
         distanceCoolness(handLeft_ni, handRight_ni);
         //distanceCoolness(head_ni, footLeft_ni);
@@ -174,25 +167,6 @@ function draw() {
 
     // draw entire skeleton
     drawAllJoints();
-=======
-  background(0);
-    
-  // draw entire skeleton
-  drawAllJoints();
-    
-  // using Ni Mate (use the "handRight_ni" variables)
-  if (ni_mate) {
-    fill(255);
-    // call your awesome function that draws visuals
-    distanceCoolness(handRight_ni, handLeft_ni);
-  }
-
-  // using Kinectron (use the "handRight" variables)
-  else {
-    // call your awesome function that draws visuals
-    distanceCoolness(handRight, handLeft);
-  }
->>>>>>> c8a908b840f9adb8c9025434e3c7fd257f1d16cf
 }
 
 
